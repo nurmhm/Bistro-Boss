@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import usePublicAxios from "../../Hooks/usePublicAxios";
+import GoogleSign from "../../Components/GoogleSign";
 
 const SignUp = () => {
    const {createUser,updateUser} =useContext(AuthContext);
@@ -31,6 +32,8 @@ const SignUp = () => {
           publicAxios.post('/users',newUser)
           .then(res =>{
             console.log(res.data)
+           
+
             navigate('/')
           })
             
@@ -126,6 +129,7 @@ const SignUp = () => {
                      <p className="text-center">
                         Already have an account? <Link to='/login' className='text-[#D1A054]'>Login</Link>
                      </p>
+                     <GoogleSign></GoogleSign>
                   </div>
                </div>
             </div>

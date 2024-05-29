@@ -4,6 +4,7 @@ import { AuthContext } from '../../provider/AuthProvider';
 import img from '../../assets/others/authentication1.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import GoogleSign from '../../Components/GoogleSign';
 
 
 const Login = () => {
@@ -108,6 +109,7 @@ const Login = () => {
                   <div>
                      <p className='text-center'>New to Ema-John? <Link to='/signup' className='text-[#D1A054]'>Create a new account</Link></p>
                   </div>
+                  <GoogleSign></GoogleSign>
                </div>
             </div>
          </div>

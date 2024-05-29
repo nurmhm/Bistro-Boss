@@ -1,5 +1,4 @@
 
-import { useEffect, useState } from "react";
 import Title from "../../Components/Title";
 
 import MenuItem from "../Shared/MenuItem";
@@ -9,7 +8,7 @@ import useMenu from "../../Hooks/uesMenu";
 const Populer = () => {
 
   const [menu] = useMenu();
-   console.log(menu)
+ 
    const popular = menu.filter(item => item.category === 'popular');
 
  

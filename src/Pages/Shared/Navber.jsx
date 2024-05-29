@@ -49,7 +49,8 @@ const Navbar = () => {
 
           <button className="flex items-center gap-4">
             <FaCartPlus size={24} />
-            <div className="badge badge-secondary">+{cart.length}</div>
+            {user ? <div className="badge badge-secondary">+{cart.length}</div> :  <div className="badge badge-secondary">0</div>}
+            
           </button>
           </NavLink>
 
